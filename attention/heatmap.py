@@ -1,3 +1,24 @@
+#   Original Paper Title: "What the DAAM: Interpreting Stable Diffusion Using Cross Attention"
+#   Original Paper URL:  https://arxiv.org/abs/2210.04885
+#   Original Implementation URL: https://github.com/castorini/daam
+#   Original License: MIT License - Copyright (c) 2022 Castorini
+# --------------------------------------------------------------------------------------------
+#   LabelDiffusion - Automatic Labeling of Stable Diffusion Pipelines
+#   Copyright (C) 2023  Michael Shenoda
+#
+#   This program is free software: you can redistribute it and/or modify
+#   it under the terms of the GNU Affero General Public License as published
+#   by the Free Software Foundation, either version 3 of the License, or
+#   (at your option) any later version.
+#
+#   This program is distributed in the hope that it will be useful,
+#   but WITHOUT ANY WARRANTY; without even the implied warranty of
+#   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+#   GNU Affero General Public License for more details.
+#
+#   You should have received a copy of the GNU Affero General Public License
+#   along with this program.  If not, see <https://www.gnu.org/licenses/>.
+
 from collections import defaultdict
 from functools import lru_cache
 from typing import Any, Dict, Tuple, Set

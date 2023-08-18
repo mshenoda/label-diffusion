@@ -1,20 +1,22 @@
+#   LabelDiffusion - Automatic Labeling of Stable Diffusion Pipelines
+#   Copyright (C) 2023  Michael Shenoda
+#
+#   This program is free software: you can redistribute it and/or modify
+#   it under the terms of the GNU Affero General Public License as published
+#   by the Free Software Foundation, either version 3 of the License, or
+#   (at your option) any later version.
+#
+#   This program is distributed in the hope that it will be useful,
+#   but WITHOUT ANY WARRANTY; without even the implied warranty of
+#   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+#   GNU Affero General Public License for more details.
+#
+#   You should have received a copy of the GNU Affero General Public License
+#   along with this program.  If not, see <https://www.gnu.org/licenses/>.
+
 from PIL import Image, ImageDraw
 
 __all__ = ["draw_bounding_boxes", "draw_binary_mask"]
-
-# def draw_bounding_boxes(image, bounding_boxes, color=(0, 255, 0), thickness=2):
-#     # Create a copy of the image to draw the bounding boxes
-#     image_with_boxes = image.copy()
-
-#     # Create a PIL ImageDraw object to draw on the image
-#     draw = ImageDraw.Draw(image_with_boxes)
-
-#     # Draw bounding boxes on the copied image
-#     for bbox in bounding_boxes:
-#         x1, y1, x2, y2 = bbox
-#         draw.rectangle([x1, y1, x2, y2], outline=color, width=thickness)
-
-#     return image_with_boxes
 
 def draw_bounding_boxes(image, labels, color=(0, 255, 0), thickness=2):
     # Create a copy of the image to draw the bounding boxes
