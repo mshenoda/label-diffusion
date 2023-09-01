@@ -43,7 +43,7 @@ def auto_autocast(*args, **kwargs):
 
     return torch.cuda.amp.autocast(*args, **kwargs)
 
-def create_generator(seed: int, auto_select_device:bool=False) -> torch.Generator:
+def create_generator(seed: int, device:str=None, auto_select_device:bool=False) -> torch.Generator:
     random.seed(seed)
     np.random.seed(seed)
     torch.manual_seed(seed)
@@ -53,6 +53,8 @@ def create_generator(seed: int, auto_select_device:bool=False) -> torch.Generato
     
     if auto_select_device:
         gen = torch.Generator(device=auto_device())
+    elif device != None:
+        gen = torch.Generator(device=device)
     else:
         gen = torch.Generator()
     
