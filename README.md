@@ -9,7 +9,8 @@ Comes with its dedicated integral labeling pipeline for each diffusion task: Tex
 Uses cross attention heatmap to provide sematnic segmentation then finds contours to localize polygons and bounding boxes
 
 ### Supervised method
-Utilizes existing model architectures to provide instance segemenations and bounding boxes; Currently uses [YOLOv8-Seg](https://github.com/ultralytics/ultralytics)
+Utilizes existing model architectures to provide instance segemenations and bounding boxes;
+Currently uses [YOLOv8-Seg](https://github.com/ultralytics/ultralytics)
 
 
 ## Installation
