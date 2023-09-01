@@ -1,14 +1,15 @@
-scikit-image
-diffusers[torch]==0.16.1
+# torch
+diffusers==0.16.1
 spacy
 gradio
 ftfy
-transformers==4.27.4
+transformers
 pandas
 numba
 nltk
 inflect
 joblib
-accelerate==0.18.0
+accelerate
 opencv-python
 xformers
+ultralytics
